@@ -4,7 +4,6 @@ from langchain.document_loaders.csv_loader import CSVLoader
 from langchain.embeddings import HuggingFaceInstructEmbeddings
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
-from langchain.memory import ConversationBufferMemory
 import os
 
 from dotenv import load_dotenv
@@ -35,7 +34,6 @@ def get_qa_chain():
 
     # Create a retriever for querying the vector database
     retriever = vectordb.as_retriever(score_threshold=0.9)
-    memory = ConversationBufferMemory(memory_key='chat_history', return_messages=True, output_key='answer')
 
     prompt_template = """Given the following context and a question, generate an answer based on this and previous context only.
     In the answer try to provide as much text as possible from "response" section in the source document context with some changes.
@@ -43,12 +41,10 @@ def get_qa_chain():
 
     CONTEXT: {context}
 
-    CHAT_HISTORY: {chat_history}
-
     QUESTION: {question}"""
 
     PROMPT = PromptTemplate(
-        template=prompt_template, input_variables=["context", "chat_history", "question"]
+        template=prompt_template, input_variables=["context", "question"]
     )
 
     chain = RetrievalQA.from_chain_type(llm=llm,
@@ -56,8 +52,7 @@ def get_qa_chain():
                                         retriever=retriever,
                                         input_key="query",
                                         return_source_documents=True,
-                                        chain_type_kwargs={"prompt": PROMPT},
-                                        memory=memory)
+                                        chain_type_kwargs={"prompt": PROMPT})
 
     return chain
 
