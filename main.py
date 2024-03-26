@@ -1,7 +1,7 @@
 import streamlit as st
 from langchain_helper import get_qa_chain, create_vector_db
 
-st.title("Thera Bot")
+st.title("🐻‍❄️ Thera Bot")
 
 # Initialize chat history
 if "messages" not in st.session_state:
@@ -27,20 +27,6 @@ if prompt := st.chat_input("What is up?"):
     # Add assistant response to chat history
     st.session_state.messages.append({"role": "assistant", "content": response['result']})
 
-##from langchain_helper import get_qa_chain, create_vector_db
-##st.title("Codebasics Q&A 🌱")
-##btn = st.button("Create Knowledgebase")
-##if btn:
-##    create_vector_db()
-##
-##question = st.text_input("Question: ")
-##
-##if question:
-##    chain = get_qa_chain()
-##    response = chain(prompt)
-##
-##    st.header("Answer")
-##    st.write(response["result"])
 
 
 
