@@ -1,7 +1,7 @@
 
-# TheraBot: Question and Answer System Based on Google Palm LLM and Langchain for E-learning company  
+# TheraBot: Question and Answer System Based on Google Palm LLM and Langchain for College Project
 
-This is an end to end LLM project based on Google Palm and Langchain. We are building a Q&A system for mental health chatbot called TheraBot. Codebasics sells data related courses and bootcamps. They have thousands of learners who uses discord server or email to ask questions. This system will provide a streamlit based user interface for students where they can ask questions and get answers. 
+This is an end to end LLM project based on Google Palm and Langchain. We are building a Q&A system for mental health chatbot using a atreamlit interface called TheraBot.
 
 ## Project Highlights
 
