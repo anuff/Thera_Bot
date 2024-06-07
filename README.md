@@ -3,13 +3,6 @@
 
 This is an end to end LLM project based on Google Palm and Langchain. We are building a Q&A system for mental health chatbot using a atreamlit interface called TheraBot.
 
-## Project Highlights
-
-- Use a real CSV file of FAQs that Codebasics company is using right now. 
-- Their human staff will use this file to assist their course learners.
-- We will build an LLM based question and answer system that can reduce the workload of their human staff.
-- Students should be able to use this system to ask questions directly and get answers within seconds
-
 ## You will learn following,
   - Langchain + Google Palm: LLM based Q&A
   - Streamlit: UI
@@ -26,7 +19,7 @@ This is an end to end LLM project based on Google Palm and Langchain. We are bui
 2.Navigate to the project directory:
 
 ```bash
-  cd 3_project_codebasics_q_and_a
+  cd Thera_Bot
 ```
 3. Install the required dependencies using pip:
 
@@ -55,11 +48,10 @@ streamlit run main.py
 - Now you are ready to ask questions. Type your question in Question box and hit Enter
 
 ## Sample Questions
-  - Do you guys provide internship and also do you offer EMI payments?
-  - Do you have javascript course?
-  - Should I learn power bi or tableau?
-  - I've a MAC computer. Can I use powerbi on it?
-  - I don't see power pivot. how can I enable it?
+  - I suffer from social anxity. How can I cope with it??
+  - My college studies are making me stressed? How can I deal with it??
+  - I don't feel confident about my body? What should I do?
+  - How do I cope with work related stress?
 
 ## Project Structure
 
