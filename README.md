@@ -3,7 +3,7 @@
 
 This is an end to end LLM project based on Google Palm and Langchain. We are building a Q&A system for mental health chatbot using a atreamlit interface called TheraBot.
 
-## You will learn following,
+## You will learn following:
   - Langchain + Google Palm: LLM based Q&A
   - Streamlit: UI
   - Huggingface instructor embeddings: Text embeddings
@@ -48,8 +48,8 @@ streamlit run main.py
 - Now you are ready to ask questions. Type your question in Question box and hit Enter
 
 ## Sample Questions
-  - I suffer from social anxiety. How can I cope with it??
-  - My college studies are making me stressed? How can I deal with it??
+  - I suffer from social anxiety. How can I cope with it?
+  - My college studies are making me stressed? How can I deal with it?
   - I don't feel confident about my body? What should I do?
   - How do I cope with work related stress?
 
